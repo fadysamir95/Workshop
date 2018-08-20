@@ -1,0 +1,893 @@
+/*---------*/
+/*Reset CSS*/
+/*---------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*---------*/
+/*mainRules*/
+/*---------*/
+html, body {
+  background-color: #ffffff;
+  color: #008795;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+  padding: 0px;
+}
+
+/*------*/
+/*Header*/
+/*------*/
+header .head .left .logo {
+  margin: 14px 0 14px 113px;
+  float: left;
+}
+
+header .head .right {
+  float: right;
+}
+
+header .head .right .rightTop .sign {
+  margin: 33px 0 0 0;
+  text-transform: uppercase;
+  font-size: 0.4em;
+  letter-spacing: 0.6px;
+  font-family: "Segoe UI";
+  color: #008795;
+  text-decoration: none;
+}
+
+header .head .right .rightTop .line1 {
+  -webkit-transform: translate(0, 17px);
+          transform: translate(0, 17px);
+}
+
+header .head .right .rightBottom .english {
+  font-size: 0.400em;
+  font-family: "Montserrat";
+  color: white;
+  text-decoration: none;
+  line-height: 4.583;
+  background-color: #008795;
+  padding: 6px;
+  border-radius: 45%;
+}
+
+header .head .right .rightBottom .arabic {
+  font-size: 0.400em;
+  font-family: "Montserrat";
+  color: #464646;
+  text-decoration: none;
+  line-height: 4.583;
+}
+
+header .head .right .rightBottom .bigFont {
+  font-size: 0.667em;
+  font-family: "Segoe UI";
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #008795;
+  text-decoration: none;
+}
+
+header .head .right .rightBottom .smallFont {
+  font-size: 0.467em;
+  font-family: "Segoe UI";
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #008795;
+  text-decoration: none;
+}
+
+header .head .right .rightBottom {
+  margin: 9px 0 0 13px;
+}
+
+header .head .right .rightTop .hvr-underline-from-left:before {
+  background-color: #008795;
+  height: 1px;
+}
+
+header .navbar {
+  color: #008795;
+  background-color: #f2f0f0;
+  width: 100%;
+  z-index: 242;
+  margin: 0;
+  border: none;
+}
+
+header .navbar ul {
+  list-style-type: none;
+  margin: 0 0 0 112px;
+}
+
+header .navbar ul li {
+  float: left;
+  padding: 0.4em;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 3px dashed;
+  border-top: 4px solid\9;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+header .navbar ul .hvr-underline-from-left:before {
+  background-color: #008795;
+  height: 3px;
+}
+
+header .navbar ul li a {
+  font-size: 0.6em;
+  font-family: "Optima";
+  color: #008795;
+  text-decoration: none;
+}
+
+header .navbar img {
+  float: right;
+  padding: 0.6em 0 0.4em 0;
+}
+
+/*------*/
+/*Banner*/
+/*------*/
+#banner .banner-carousel .image-one {
+  width: 100%;
+  height: 470px;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#banner .banner-carousel .image-two {
+  width: 100%;
+  height: 470px;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#banner .banner-carousel .image-three {
+  width: 100%;
+  height: 470px;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.centered p:first-child {
+  margin-top: 169px;
+  font-size: 1em;
+  font-family: "Optima";
+  color: #c2f83f;
+  padding: 0px;
+}
+
+.centered p:first-child span {
+  font-size: 0.8em;
+  color: white;
+}
+
+.centered p:nth-child(2) {
+  font-family: "Optima";
+  font-size: 0.8em;
+  color: white;
+}
+
+.centered p:nth-child(2) span {
+  font-size: 1em;
+}
+
+.centered p:nth-child(3) {
+  font-family: "Optima";
+  font-size: 0.8em;
+  color: white;
+}
+
+.centered p:nth-child(3) span {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.centered .readMore {
+  display: inline-block;
+  font-family: "Optima";
+  font-size: 0.6em;
+  width: 160px;
+  border-width: 1.5px;
+  border-color: white;
+  border-style: solid;
+  background: transparent;
+  margin-top: 49px;
+  margin-right: 4px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.centered .donateNow {
+  display: inline-block;
+  font-family: "Optima";
+  font-size: 0.6em;
+  width: 160px;
+  border-width: 1.5px;
+  border-color: white;
+  border-style: solid;
+  background: transparent;
+  margin-top: 49px;
+  margin-left: 4px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.centered .hvr-sweep-to-right:before {
+  background-color: #8dc043;
+}
+
+.centered .donateNow:hover, .donateNow:focus {
+  border-color: #8dc043;
+}
+
+.centered .readMore:hover, .readMore:focus {
+  border-color: #8dc043;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 10px;
+}
+
+/*----------*/
+/*Foundation*/
+/*----------*/
+#foundation {
+  width: 100%;
+  height: 672px;
+  background-color: #ffffff;
+}
+
+#foundation h3 {
+  font-family: "Optima";
+  padding-top: 80px;
+  font-size: 1.2em;
+}
+
+#foundation p {
+  font-family: "Segoe UI";
+  padding-top: 5px;
+  font-size: 0.667em;
+}
+
+.foundation {
+  width: 100%;
+  margin-top: 78px;
+  height: 433px;
+}
+
+.foundationImg1 {
+  display: inline-block;
+  background-image: url("../images/foundation-img1.jpg");
+  background-repeat: no-repeat;
+  height: 403px;
+  width: 457px;
+  margin-right: 10px;
+}
+
+.foundationImg2 {
+  display: inline-block;
+  background-image: url("../images/foundation-img2.jpg");
+  background-repeat: no-repeat;
+  height: 403px;
+  width: 457px;
+  margin-left: 10px;
+}
+
+.foundationImg1 .graduate1 {
+  position: relative;
+  top: -55px;
+}
+
+.foundationImg2 .graduate2 {
+  position: relative;
+  top: -55px;
+}
+
+#foundation .foundationImg1 .p1 {
+  text-transform: uppercase;
+  font-family: "Segoe UI";
+  font-size: 0.800em;
+  color: white;
+  text-align: center;
+  font-weight: 150;
+  position: relative;
+  top: -48px;
+}
+
+#foundation .foundationImg1 .p2 {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 2.040em;
+  line-height: 0.899;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: -37px;
+}
+
+#foundation .foundationImg1 .p3 {
+  text-transform: uppercase;
+  font-family: "Segoe UI";
+  font-size: 0.800em;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: -38px;
+}
+
+#foundation .foundationImg1 .p4 {
+  font-family: "Calibri";
+  color: white;
+  font-size: 0.600em;
+  text-align: center;
+  position: relative;
+  top: -41px;
+}
+
+#foundation .foundationImg2 .p5 {
+  text-transform: uppercase;
+  font-family: "Segoe UI";
+  font-size: 0.800em;
+  color: white;
+  text-align: center;
+  font-weight: 150;
+  position: relative;
+  top: -48px;
+}
+
+#foundation .foundationImg2 .p6 {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 2.040em;
+  line-height: 0.899;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: -37px;
+}
+
+#foundation .foundationImg2 .p7 {
+  text-transform: uppercase;
+  font-family: "Segoe UI";
+  font-size: 0.800em;
+  color: white;
+  position: relative;
+  top: -38px;
+}
+
+#foundation .foundationImg2 .p8 {
+  font-family: "Calibri";
+  color: white;
+  font-size: 0.600em;
+  text-align: center;
+  position: relative;
+  top: -41px;
+}
+
+/*-----------*/
+/*Investments*/
+/*-----------*/
+#investments {
+  width: 100%;
+  height: 658px;
+  background-image: url("../images/investments-img.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#investments p {
+  font-family: "Optima";
+  color: white;
+}
+
+#investments .today {
+  line-height: 1.333;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  padding-top: 43px;
+}
+
+#investments .support {
+  line-height: 2;
+  font-size: 0.8em;
+  padding-bottom: 55px;
+}
+
+#investments .contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+}
+
+#investments .first-square {
+  display: inline-block;
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  width: 190px;
+  height: 190px;
+  z-index: 98;
+  margin: 0px 60px -44px 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#investments .first-square:hover {
+  background-color: #008795;
+}
+
+#investments .second-square {
+  display: inline-block;
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  width: 190px;
+  height: 190px;
+  z-index: 98;
+  margin: 0px 60px -44px 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#investments .second-square:hover {
+  background-color: #008795;
+}
+
+#investments .third-square {
+  display: inline-block;
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  width: 190px;
+  height: 190px;
+  z-index: 98;
+  margin: 0px 60px -44px 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#investments .third-square:hover {
+  background-color: #008795;
+}
+
+#investments .fourth-square {
+  display: inline-block;
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  width: 190px;
+  height: 190px;
+  z-index: 98;
+  margin: 0px 60px -44px 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#investments .fourth-square:hover {
+  background-color: #008795;
+}
+
+#investments .fifth-square {
+  display: inline-block;
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  width: 190px;
+  height: 190px;
+  z-index: 98;
+  margin: 0px 60px -44px 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#investments .fifth-square:hover {
+  background-color: #008795;
+}
+
+#investments .sixth-square {
+  display: inline-block;
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  width: 190px;
+  height: 190px;
+  z-index: 98;
+  margin: 0px 60px -44px 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#investments .sixth-square:hover {
+  background-color: #008795;
+}
+
+#investments .seventh-square {
+  display: inline-block;
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  width: 190px;
+  height: 190px;
+  z-index: 98;
+  margin: 0px 60px -44px 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#investments .seventh-square:hover {
+  background-color: #008795;
+}
+
+/*------*/
+/*Latest*/
+/*------*/
+#latest {
+  width: 100%;
+  height: 658px;
+}
+
+#latest .ourAndPress {
+  font-family: "Optima";
+  color: #008795;
+  line-height: 1.5;
+}
+
+#latest .our {
+  font-size: 0.800em;
+  padding-top: 41px;
+  text-align: center;
+}
+
+#latest .press {
+  font-size: 1.2em;
+  text-transform: capitalize;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+#latest .latestImage1 {
+  display: inline-block;
+  background-image: url("../images/latest-img4.jpg");
+  width: 285px;
+  height: 391px;
+  float: left;
+}
+
+#latest .latestImage1:hover, .latestImage1:focus {
+  background-image: url("../images/latest-img1.jpg");
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+
+#latest .latestImage2 {
+  display: inline-block;
+  background-image: url("../images/latest-img2.jpg");
+  width: 285px;
+  height: 391px;
+  float: left;
+}
+
+#latest .latestImage2:hover, .latestImage2:focus {
+  background-image: url("../images/latest-img1.jpg");
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+}
+
+#latest .latestImage3 {
+  display: inline-block;
+  background-image: url("../images/latest-img3.jpg");
+  width: 285px;
+  height: 391px;
+  float: left;
+}
+
+#latest .latestImage3:hover, .latestImage3:focus {
+  background-image: url("../images/latest-img1.jpg");
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+}
+
+#latest .latestImage4 {
+  display: inline-block;
+  background-image: url("../images/latest-img4.jpg");
+  width: 285px;
+  height: 391px;
+  float: left;
+}
+
+#latest .latestImage4:hover, .latestImage4:focus {
+  background-image: url("../images/latest-img1.jpg");
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+}
+
+#latest .day {
+  color: white;
+  font-family: "Optima";
+  font-size: 2em;
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+#latest .month {
+  color: white;
+  font-family: "Optima";
+  font-size: 1.0em;
+  text-align: left;
+  margin-left: 15px;
+  text-transform: capitalize;
+}
+
+#latest .dayOfWeek {
+  color: white;
+  font-family: "Optima";
+  font-size: 0.600em;
+  text-align: left;
+  margin-left: 15px;
+  text-transform: capitalize;
+  transform: translate(0px, -5px);
+  -webkit-transform: translate(0px, -5px);
+  -moz-transform: translate(0px, -5px);
+  -o-transform: translate(0px, -7px);
+}
+
+#latest .par {
+  color: white;
+  font-family: "Calibri";
+  font-size: 0.467em;
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 4px;
+}
+
+#latest .readMore1 {
+  background-color: #a7a9ac;
+  width: 125px;
+  height: 47px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.533em;
+  font-family: "Calibri";
+  display: inline-block;
+  border-width: 1.5px;
+  border-color: #a7a9ac;
+  border-style: solid;
+  margin-top: 80px;
+  padding: 10px;
+  color: white;
+  text-transform: capitalize;
+  margin-left: 15px;
+}
+
+#latest .readMore2 {
+  background-color: transparent;
+  border-color: white;
+}
+
+/*-------*/
+/*Contact*/
+/*-------*/
+#contact {
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+#contact .who p {
+  font-size: 0.6em;
+  font-family: "Myriad Pro";
+  color: #4a4a4a;
+  line-height: 1.333;
+  text-transform: capitalize;
+  padding: 35px 0px 10px 0px;
+}
+
+#contact .who a {
+  display: block;
+  font-family: "Calibri";
+  font-size: 0.467em;
+  color: #4a4a4a;
+  line-height: 1.714;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+#contact .what p {
+  font-size: 0.6em;
+  font-family: "Myriad Pro";
+  color: #4a4a4a;
+  line-height: 1.333;
+  text-transform: capitalize;
+  padding: 35px 0px 10px 0px;
+}
+
+#contact .what a {
+  display: block;
+  font-size: 0.467em;
+  font-family: "Calibri";
+  color: #4a4a4a;
+  line-height: 1.714;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+#contact .get p {
+  font-size: 0.6em;
+  font-family: "Myriad Pro";
+  color: #4a4a4a;
+  line-height: 1.333;
+  text-transform: capitalize;
+  padding: 35px 0px 10px 0px;
+}
+
+#contact .get a {
+  display: block;
+  font-size: 0.467em;
+  font-family: "Calibri";
+  color: #4a4a4a;
+  line-height: 1.714;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+#contact .mediaCenter p {
+  font-size: 0.6em;
+  font-family: "Myriad Pro";
+  color: #4a4a4a;
+  line-height: 1.333;
+  text-transform: capitalize;
+  padding: 35px 0px 10px 0px;
+}
+
+#contact .mediaCenter a {
+  display: block;
+  font-size: 0.467em;
+  font-family: "Calibri";
+  color: #4a4a4a;
+  line-height: 1.714;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+#contact .contactUs p {
+  font-size: 0.6em;
+  font-family: "Myriad Pro";
+  color: #4a4a4a;
+  line-height: 1.333;
+  text-transform: capitalize;
+  padding: 35px 0px 10px 0px;
+}
+
+#contact .contactUs a {
+  display: block;
+  font-size: 0.467em;
+  font-family: "Calibri";
+  color: #4a4a4a;
+  line-height: 1.714;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+#contact .contactUs p:nth-child(3) {
+  font-size: 0.667em;
+  font-family: "Optima";
+  color: #4a4a4a;
+  line-height: 1.333;
+  text-transform: capitalize;
+  padding: 35px 0px 10px 0px;
+}
+
+/*---------*/
+/*Copyright*/
+/*---------*/
+#copyright {
+  background-color: #168d91;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+#copyright .copyright {
+  padding-top: 17px;
+}
+
+#copyright .copyright .left {
+  float: left;
+}
+
+#copyright .copyright .right {
+  float: right;
+  margin-top: 7px;
+}
+
+#copyright a {
+  font-family: "Calibri";
+  font-size: 0.533em;
+  color: white;
+  text-decoration: none;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+#copyright p {
+  font-family: "Calibri";
+  font-size: 0.533em;
+  color: white;
+  text-decoration: none;
+  line-height: 1.5;
+  text-transform: capitalize;
+  float: right;
+}
+
+/*-------*/
+/*Mobiles*/
+/*-------*/
+@media only screen and (max-width: 425px) {
+  header .head .left .logo {
+    width: 71px;
+    height: 41px;
+  }
+}
+
+/*-------*/
+/*Tablets*/
+/*-------*/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  header .head .left .logo {
+    width: 100px;
+    height: 58px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
