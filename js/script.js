@@ -1,11 +1,17 @@
-$(document).ready(function(){
-    $(".banner-carousel").owlCarousel({
-        items:1,
-    });
-    $("latestImage").hover(function(){
-        $(".readMore").addClass(".readMore2");
-    });
-    $(window).load(function() {
-        $(".english").addClass(".en");
-    });
+window.onload = function () { 
+    $("#loading").fadeOut(2500);
+    $("#loading").remove;
+    $("#loading-back").fadeOut(2400);
+    $("#loading-back").remove;
+}
+$(".banner-carousel").owlCarousel({
+    items:1,
 });
+$("#scroll-down").click(function() {
+    // var x = $("#investments").offset().top;
+    // console.log(x);
+    $("html, body").animate({
+        scrollTop: $("#investments").offset().top
+    }, 1000);
+});
+

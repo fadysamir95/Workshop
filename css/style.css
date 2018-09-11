@@ -27,6 +27,30 @@ html, body {
   padding: 0px;
 }
 
+/*-------*/
+/*Loading*/
+/*-------*/
+#loading-back {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+}
+
+#loading {
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  top: 47%;
+  left: 46%;
+}
+
+.loadingLogo {
+  width: 40%;
+  height: 40%;
+}
+
 /*------*/
 /*Header*/
 /*------*/
@@ -213,17 +237,24 @@ header .navbar .down {
   -o-transform: translate(-18px, -16px);
 }
 
+#banner .scroll-icon {
+  color: white;
+  transform: translate(-5px, -12px);
+  -webkit-transform: translate(-5px, -12px);
+  -moz-transform: translate(-5px, -12px);
+  -o-transform: translate(-5px, -12px);
+}
+
 #banner .scroll {
   font-size: 0.467em;
   font-family: "Segoe UI";
   color: #c8c8c8;
   line-height: 1.714;
-  text-align: center;
   text-transform: capitalize;
-  transform: translate(-5px, -23px);
-  -webkit-transform: translate(-5px, -23px);
-  -moz-transform: translate(-5px, -23px);
-  -o-transform: translate(-5px, -23px);
+  transform: translate(-5px, -12px);
+  -webkit-transform: translate(-5px, -12px);
+  -moz-transform: translate(-5px, -12px);
+  -o-transform: translate(-5px, -12px);
 }
 
 #banner .owl-dots {
@@ -317,135 +348,79 @@ header .navbar .down {
 /*----------*/
 #foundation {
   width: 100%;
-  height: 672px;
+  height: 26em;
   background-color: #ffffff;
 }
 
 #foundation h3 {
   font-family: "Optima";
-  padding-top: 80px;
+  padding-top: 2.667em;
   font-size: 1.2em;
 }
 
-#foundation p {
+#foundation .help {
   font-family: "Segoe UI";
-  padding-top: 5px;
+  padding-top: 0.167em;
   font-size: 0.667em;
 }
 
-.foundation {
-  width: 100%;
-  margin-top: 78px;
-  height: 433px;
-}
-
-.foundationImg1 {
+.foundationImg {
   display: inline-block;
-  background-image: url("../images/foundation-img1.jpg");
   background-repeat: no-repeat;
-  height: 403px;
-  width: 457px;
-  margin-right: 10px;
+  height: 13.433em;
+  width: 37.5%;
+  margin-top: 12%;
 }
 
-.foundationImg2 {
-  display: inline-block;
-  background-image: url("../images/foundation-img2.jpg");
-  background-repeat: no-repeat;
-  height: 403px;
-  width: 457px;
-  margin-left: 10px;
+.foundationImgOne {
+  margin-right: 0.4%;
 }
 
-.foundationImg1 .graduate1 {
-  position: relative;
-  top: -55px;
+.foundationImgTwo {
+  margin-left: 0.4%;
 }
 
-.foundationImg2 .graduate2 {
-  position: relative;
-  top: -55px;
+.foundationImg .foundation-icon {
+  background-color: #008795;
+  border: 6px solid white;
+  border-radius: 50%;
+  padding: 7%;
+  transform: translate(0px, -50%);
+  -webkit-transform: translate(0px, -50%);
+  -moz-transform: translate(0px, -50%);
+  -o-transform: translate(0px, -50%);
 }
 
-#foundation .foundationImg1 .p1 {
+.foundationImg .program {
   text-transform: uppercase;
   font-family: "Segoe UI";
   font-size: 0.800em;
   color: white;
   text-align: center;
   font-weight: 150;
-  position: relative;
-  top: -48px;
 }
 
-#foundation .foundationImg1 .p2 {
+.foundationImg .number {
   font-family: "Segoe UI";
   font-weight: bold;
   font-size: 2.040em;
-  line-height: 0.899;
   color: white;
   text-align: center;
-  position: relative;
-  top: -37px;
 }
 
-#foundation .foundationImg1 .p3 {
+.foundationImg .date {
   text-transform: uppercase;
   font-family: "Segoe UI";
   font-size: 0.800em;
   color: white;
   text-align: center;
-  position: relative;
-  top: -38px;
 }
 
-#foundation .foundationImg1 .p4 {
+.foundationImg .description {
   font-family: "Calibri";
   color: white;
   font-size: 0.600em;
   text-align: center;
-  position: relative;
-  top: -41px;
-}
-
-#foundation .foundationImg2 .p5 {
-  text-transform: uppercase;
-  font-family: "Segoe UI";
-  font-size: 0.800em;
-  color: white;
-  text-align: center;
-  font-weight: 150;
-  position: relative;
-  top: -48px;
-}
-
-#foundation .foundationImg2 .p6 {
-  font-family: "Segoe UI";
-  font-weight: bold;
-  font-size: 2.040em;
-  line-height: 0.899;
-  color: white;
-  text-align: center;
-  position: relative;
-  top: -37px;
-}
-
-#foundation .foundationImg2 .p7 {
-  text-transform: uppercase;
-  font-family: "Segoe UI";
-  font-size: 0.800em;
-  color: white;
-  position: relative;
-  top: -38px;
-}
-
-#foundation .foundationImg2 .p8 {
-  font-family: "Calibri";
-  color: white;
-  font-size: 0.600em;
-  text-align: center;
-  position: relative;
-  top: -41px;
 }
 
 /*-----------*/
@@ -453,7 +428,6 @@ header .navbar .down {
 /*-----------*/
 #investments {
   width: 100%;
-  height: 658px;
   background-image: url("../images/investments-img.jpg");
   background-size: cover;
   -webkit-background-size: cover;
@@ -484,7 +458,7 @@ header .navbar .down {
 /*------*/
 #latest {
   width: 100%;
-  height: 658px;
+  height: auto;
 }
 
 #latest .ourAndPress {
@@ -506,59 +480,37 @@ header .navbar .down {
   text-align: center;
 }
 
-#latest .latestImage1 {
-  background-image: url("../images/latest-img4.jpg");
-  width: 25%;
-  height: 391px;
-  float: left;
+#latest .col-xs-12 {
+  padding: 0px;
 }
 
-#latest .latestImage1:hover, .latestImage1:focus {
-  background-image: url("../images/latest-img1.jpg");
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
+#latest .col-sm-6 {
+  padding: 0px;
 }
 
-#latest .latestImage2 {
-  display: inline-block;
-  background-image: url("../images/latest-img2.jpg");
-  width: 25%;
-  height: 391px;
-  float: left;
+#latest .col-md-3 {
+  padding: 0px;
 }
 
-#latest .latestImage2:hover, .latestImage2:focus {
-  background-image: url("../images/latest-img1.jpg");
-  transition: 0.4s ease;
-  -webkit-transition: 0.4s ease;
+#latest .latestImage {
+  margin-bottom: 15px;
 }
 
-#latest .latestImage3 {
-  display: inline-block;
-  background-image: url("../images/latest-img3.jpg");
-  width: 25%;
-  height: 391px;
-  float: left;
+#latest .latestImage img {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-#latest .latestImage3:hover, .latestImage3:focus {
-  background-image: url("../images/latest-img1.jpg");
-  transition: 0.4s ease;
-  -webkit-transition: 0.4s ease;
+#latest .latestImage .content {
+  width: 100%;
+  height: 98.5%;
+  position: absolute;
+  top: 0%;
 }
 
-#latest .latestImage4 {
-  display: inline-block;
-  background-image: url("../images/latest-img4.jpg");
-  width: 25%;
-  height: 391px;
-  float: left;
-}
-
-#latest .latestImage4:hover, .latestImage4:focus {
-  background-image: url("../images/latest-img1.jpg");
-  transition: 0.4s ease;
-  -webkit-transition: 0.4s ease;
+#latest .latestImage .content:hover {
+  background-color: #7cc242;
 }
 
 #latest .day {
@@ -601,7 +553,7 @@ header .navbar .down {
   margin-top: 4px;
 }
 
-#latest .readMore1 {
+#latest .readMore {
   background-color: #a7a9ac;
   width: 125px;
   height: 47px;
@@ -613,19 +565,14 @@ header .navbar .down {
   border-width: 1.5px;
   border-color: #a7a9ac;
   border-style: solid;
-  margin-top: 80px;
+  margin-top: 29%;
   padding: 10px;
   color: white;
   text-transform: capitalize;
-  margin-left: 15px;
+  margin-left: 19px;
 }
 
-#latest .readMore1:hover {
-  background-color: transparent;
-  border-color: white;
-}
-
-#latest .readMore2 {
+#latest .readMore:hover {
   background-color: transparent;
   border-color: white;
 }
@@ -697,7 +644,7 @@ header .navbar .down {
   text-decoration: none;
 }
 
-#contact .mediaCenter p {
+#contact .media-center p {
   font-size: 0.6em;
   font-family: "Myriad Pro";
   color: #4a4a4a;
@@ -706,7 +653,7 @@ header .navbar .down {
   padding: 35px 0px 10px 0px;
 }
 
-#contact .mediaCenter a {
+#contact .media-center a {
   display: block;
   font-size: 0.467em;
   font-family: "Calibri";
@@ -716,7 +663,7 @@ header .navbar .down {
   text-decoration: none;
 }
 
-#contact .contactUs p {
+#contact .contact-us p {
   font-size: 0.6em;
   font-family: "Myriad Pro";
   color: #4a4a4a;
@@ -725,7 +672,7 @@ header .navbar .down {
   padding: 35px 0px 10px 0px;
 }
 
-#contact .contactUs a {
+#contact .contact-us a {
   display: block;
   font-size: 0.467em;
   font-family: "Calibri";
@@ -735,7 +682,7 @@ header .navbar .down {
   text-decoration: none;
 }
 
-#contact .contactUs p:nth-child(3) {
+#contact .contact-us p:nth-child(3) {
   font-size: 0.667em;
   font-family: "Optima";
   color: #4a4a4a;
@@ -744,7 +691,7 @@ header .navbar .down {
   padding: 35px 0px 10px 0px;
 }
 
-#contact .contactUs .email {
+#contact .contact-us .email {
   background-color: white;
   width: 80%;
   height: 42px;
@@ -801,6 +748,29 @@ header .navbar .down {
 /*Mobiles*/
 /*-------*/
 /*--------------------------------------------------------*/
+/*-------*/
+/*Loading*/
+/*-------*/
+@media only screen and (max-width: 320px) {
+  #loading {
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    top: 47%;
+    left: 41%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 425px) {
+  #loading {
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    top: 47%;
+    left: 44%;
+  }
+}
+
 /*------*/
 /*Header*/
 /*------*/
@@ -1078,104 +1048,71 @@ header .navbar .down {
 /*----------*/
 @media only screen and (max-width: 425px) {
   #foundation {
-    width: 100%;
-    height: 825px;
+    height: 39em;
   }
 }
 
 @media only screen and (max-width: 425px) {
   #foundation h3 {
-    padding-top: 22px;
+    padding-top: 1.667em;
     font-size: 0.9em;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  #foundation p {
-    padding-top: 8px;
-    font-size: 0.367em;
+  #foundation .help {
+    padding-top: 1.267em;
+    font-size: 0.6em;
   }
 }
 
-@media only screen and (max-width: 699px) {
-  .foundationImg1 {
-    height: 257px;
-    width: 70%;
+@media only screen and (max-width: 425px) {
+  .foundationImg {
+    background-repeat: no-repeat;
+    height: 13.433em;
+    width: 90%;
+    margin-top: 22%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .foundationImgOne {
     margin-right: 0px;
-    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .foundationImgTwo {
     margin-left: 0px;
   }
 }
 
-@media only screen and (max-width: 699px) {
-  .foundationImg2 {
-    height: 257px;
-    width: 70%;
-    margin-right: 0px;
-    margin-top: 50px;
-    margin-left: 0px;
-  }
-}
-
 @media only screen and (max-width: 425px) {
-  #foundation .foundationImg1 .p1 {
-    font-size: 0.500em;
+  .foundationImg .program {
+    font-size: 0.600em;
     font-weight: 400;
-    top: -48px;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  #foundation .foundationImg1 .p2 {
+  .foundationImg .number {
     font-weight: 500;
     font-size: 1.040em;
-    line-height: 0.899;
-    top: -60px;
+    line-height: 1.5;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  #foundation .foundationImg1 .p3 {
+  .foundationImg .date {
+    font-size: 0.600em;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .foundationImg .description {
     font-size: 0.500em;
-    top: -62px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  #foundation .foundationImg1 .p4 {
-    font-size: 0.400em;
-    top: -68px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  #foundation .foundationImg2 .p5 {
-    font-size: 0.500em;
-    font-weight: 400;
-    top: -48px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  #foundation .foundationImg2 .p6 {
-    font-weight: 500;
-    font-size: 1.040em;
-    line-height: 0.899;
-    top: -60px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  #foundation .foundationImg2 .p7 {
-    font-size: 0.500em;
-    top: -62px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  #foundation .foundationImg2 .p8 {
-    font-size: 0.400em;
-    top: -68px;
+    line-height: 1.2;
   }
 }
 
@@ -1303,74 +1240,17 @@ header .navbar .down {
 }
 
 @media only screen and (max-width: 425px) {
-  #latest .latestImage1 {
-    width: 80%;
-    height: 360px;
-    margin-left: 10%;
-    margin-bottom: 17px;
-  }
-}
-
-@media only screen and (min-width: 426px) and (max-width: 611px) {
-  #latest .latestImage1 {
-    width: 56%;
-    height: 360px;
-    margin-left: 22%;
-    margin-bottom: 17px;
+  #latest .latestImage img {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  #latest .latestImage2 {
-    width: 80%;
-    height: 360px;
-    margin-left: 10%;
-    margin-bottom: 17px;
-  }
-}
-
-@media only screen and (min-width: 426px) and (max-width: 611px) {
-  #latest .latestImage2 {
-    width: 56%;
-    height: 360px;
-    margin-left: 22%;
-    margin-bottom: 17px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  #latest .latestImage3 {
-    width: 80%;
-    height: 360px;
-    margin-left: 10%;
-    margin-bottom: 17px;
-  }
-}
-
-@media only screen and (min-width: 426px) and (max-width: 611px) {
-  #latest .latestImage3 {
-    width: 56%;
-    height: 360px;
-    margin-left: 22%;
-    margin-bottom: 17px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  #latest .latestImage4 {
-    width: 80%;
-    height: 360px;
-    margin-left: 10%;
-    margin-bottom: 17px;
-  }
-}
-
-@media only screen and (min-width: 426px) and (max-width: 611px) {
-  #latest .latestImage4 {
-    width: 56%;
-    height: 360px;
-    margin-left: 22%;
-    margin-bottom: 17px;
+  #latest .readMore {
+    font-size: 0.533em;
+    margin-top: 33%;
+    padding: 10px;
+    margin-left: 19px;
   }
 }
 
@@ -1378,13 +1258,37 @@ header .navbar .down {
 /*Contact*/
 /*-------*/
 @media only screen and (max-width: 425px) {
-  #contact .mediaCenter p {
-    padding: 0px 0px 10px 0px;
+  #contact .who a {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  #contact .contactUs .email {
+  #contact .what a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #contact .get a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #contact .media-center a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #contact .contact-us a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #contact .contact-us .email {
     width: 100%;
     height: 42px;
     font-size: 0.37em;
@@ -1435,6 +1339,19 @@ header .navbar .down {
 /*Tablets*/
 /*-------*/
 /*--------------------------------------------------------*/
+/*-------*/
+/*Loading*/
+/*-------*/
+@media only screen and (min-width: 426px) and (max-width: 1023px) {
+  #loading {
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    top: 48.5%;
+    left: 47%;
+  }
+}
+
 /*------*/
 /*Header*/
 /*------*/
@@ -1577,128 +1494,139 @@ header .navbar .down {
   }
 }
 
+@media only screen and (min-width: 426px) and (max-width: 1023px) {
+  #banner .scroll-icon {
+    transform: translate(-5px, 0px);
+    -webkit-transform: translate(-5px, 0px);
+    -moz-transform: translate(-5px, 0px);
+    -o-transform: translate(-5px, 0px);
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1023px) {
+  #banner .scroll {
+    transform: translate(-5px, 0px);
+    -webkit-transform: translate(-5px, 0px);
+    -moz-transform: translate(-5px, 0px);
+    -o-transform: translate(-5px, 0px);
+  }
+}
+
 /*----------*/
 /*Foundation*/
 /*----------*/
-@media only screen and (min-width: 426px) and (max-width: 699px) {
+@media only screen and (min-width: 426px) and (max-width: 541px) {
   #foundation {
-    width: 100%;
-    height: 870px;
+    height: 41em;
   }
 }
 
-@media only screen and (min-width: 699px) and (max-width: 1023px) {
+@media only screen and (min-width: 542px) and (max-width: 1023px) {
   #foundation {
-    width: 100%;
-    height: 545px;
-  }
-}
-
-@media only screen and (min-width: 426px) and (max-width: 611px) {
-  #foundation .foundation {
-    margin-top: 80px;
-  }
-}
-
-@media only screen and (min-width: 611px) and (max-width: 1023px) {
-  #foundation .foundation {
-    margin-top: 27px;
+    height: 25em;
   }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 1023px) {
   #foundation h3 {
-    padding-top: 46px;
-    font-size: 1em;
+    padding-top: 1.667em;
+    font-size: 1.1em;
   }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 1023px) {
-  #foundation p {
-    padding-top: 10px;
-    font-size: 0.487em;
+  #foundation .help {
+    padding-top: 1.267em;
+    font-size: 0.7em;
   }
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1023px) {
-  .foundationImg1 {
-    height: 287px;
+@media only screen and (min-width: 426px) and (max-width: 541px) {
+  .foundationImg {
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 22%;
+  }
+}
+
+@media only screen and (min-width: 542px) and (max-width: 1023px) {
+  .foundationImg {
+    background-repeat: no-repeat;
     width: 44%;
+    margin-top: 16%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .foundationImg {
+    background-repeat: no-repeat;
+    width: 37.5%;
+    margin-top: 12%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1023px) {
+  .foundationImgOne {
     margin-right: 0px;
-    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1023px) {
+  .foundationImgTwo {
     margin-left: 0px;
   }
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1023px) {
-  .foundationImg2 {
-    height: 287px;
-    width: 44%;
-    margin-right: 0px;
-    margin-top: 75px;
-    margin-left: 0px;
-  }
-}
-
 @media only screen and (min-width: 426px) and (max-width: 1023px) {
-  #foundation .foundationImg1 .p1 {
+  .foundationImg .program {
     font-size: 0.600em;
     font-weight: 400;
-    top: -48px;
   }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 1023px) {
-  #foundation .foundationImg1 .p2 {
+  .foundationImg .number {
     font-weight: 500;
-    font-size: 1.140em;
-    line-height: 0.899;
-    top: -50px;
+    font-size: 1.540em;
+    line-height: 1.5;
   }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 1023px) {
-  #foundation .foundationImg1 .p3 {
+  .foundationImg .date {
+    font-size: 0.700em;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1023px) {
+  .foundationImg .description {
     font-size: 0.500em;
-    top: -52px;
+    line-height: 1.3;
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 1023px) {
-  #foundation .foundationImg1 .p4 {
-    font-size: 0.400em;
-    top: -58px;
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  #latest .readMore {
+    margin-top: 10%;
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 1023px) {
-  #foundation .foundationImg2 .p5 {
-    font-size: 0.600em;
-    font-weight: 400;
-    top: -48px;
+@media only screen and (min-width: 426px) and (max-width: 786px) {
+  #latest .latestImage .content {
+    height: 98.5%;
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 1023px) {
-  #foundation .foundationImg2 .p6 {
-    font-weight: 500;
-    font-size: 1.140em;
-    line-height: 0.899;
-    top: -50px;
+@media only screen and (min-width: 787px) and (max-width: 991px) {
+  #latest .latestImage .content {
+    height: 99%;
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 1023px) {
-  #foundation .foundationImg2 .p7 {
-    font-size: 0.500em;
-    top: -52px;
-  }
-}
-
-@media only screen and (min-width: 426px) and (max-width: 1023px) {
-  #foundation .foundationImg2 .p8 {
-    font-size: 0.400em;
-    top: -58px;
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  #latest .latestImage .content {
+    height: 98%;
   }
 }
 
@@ -1825,63 +1753,9 @@ header .navbar .down {
   }
 }
 
-@media only screen and (min-width: 612px) and (max-width: 1023px) {
-  #latest .latestImage1 {
-    width: 33%;
-    height: 370px;
-    margin-left: 15%;
-    margin-bottom: 10px;
-  }
-}
-
-@media only screen and (min-width: 612px) and (max-width: 1023px) {
-  #latest .latestImage2 {
-    width: 33%;
-    height: 370px;
-    margin-left: 2%;
-    margin-bottom: 10px;
-  }
-}
-
-@media only screen and (min-width: 612px) and (max-width: 1023px) {
-  #latest .latestImage3 {
-    width: 33%;
-    height: 370px;
-    margin-left: 15%;
-    margin-bottom: 10px;
-  }
-}
-
-@media only screen and (min-width: 612px) and (max-width: 1023px) {
-  #latest .latestImage4 {
-    width: 33%;
-    height: 370px;
-    margin-left: 2%;
-    margin-bottom: 10px;
-  }
-}
-
-@media only screen and (min-width: 612px) and (max-width: 660px) {
-  #latest .readMore1 {
-    margin-top: 48px;
-  }
-}
-
-@media only screen and (min-width: 612px) and (max-width: 660px) {
-  #latest .readMore2 {
-    margin-top: 48px;
-  }
-}
-
-@media only screen and (min-width: 612px) and (max-width: 660px) {
-  #latest .readMore3 {
-    margin-top: 48px;
-  }
-}
-
-@media only screen and (min-width: 612px) and (max-width: 660px) {
-  #latest .readMore4 {
-    margin-top: 48px;
+@media only screen and (min-width: 426px) and (max-width: 1023px) {
+  #latest .latestImage img {
+    width: 100%;
   }
 }
 
@@ -1901,7 +1775,7 @@ header .navbar .down {
 }
 
 @media only screen and (min-width: 426px) and (max-width: 991px) {
-  #contact .contactUs .email {
+  #contact .contact-us .email {
     width: 100%;
     height: 42px;
     font-size: 0.433em;

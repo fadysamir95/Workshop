@@ -23,6 +23,12 @@
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
+        <!-- <div id="loading-back">
+            <div id="loading">
+                <img src="images/linkdevlogo.png" class="loadingLogo"/>
+            </div>
+        </div> -->
+
         <!-- Start Header -->
         <header>
             <div class="container">
@@ -44,6 +50,12 @@
             <!-- Start NavBar -->
             <nav class="navbar">
                 <div class="container">
+                    <button type="button" class="navbar-toggle mixitup-control-active" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <ul>
                         <li class="hvr-underline-from-left"><a href="#">Home<span class="fas fa-angle-down down"></span></a></li>
                         <li class="hvr-underline-from-left"><a href="#">Who We Are<span class="fas fa-angle-down down"></span></a></li>
@@ -73,7 +85,9 @@
                             <p>in the <span>uae.</span></p>
                             <a href="#" class="readMore hvr-sweep-to-right">read more</a>
                             <a href="#" class="donateNow hvr-sweep-to-right">donate now</a>
-                            <br>
+                            <br><br>
+                            <a href="#" id="scroll-down"><i class="fas fa-chevron-circle-down scroll-icon"></i></a>
+                            <p class="scroll">scroll down</p>
                         </div>
                     </div>
 
@@ -85,7 +99,9 @@
                             <p>in the <span>uae.</span></p>
                             <a href="#" class="readMore hvr-sweep-to-right">read more</a>
                             <a href="#" class="donateNow hvr-sweep-to-right">donate now</a>
-                            <br>
+                            <br><br>
+                            <a href="#" id="scroll-down"><i class="fas fa-chevron-circle-down scroll-icon"></i></a>
+                            <p class="scroll">scroll down</p>
                         </div>
                     </div>
 
@@ -97,7 +113,9 @@
                             <p>in the <span>uae.</span></p>
                             <a href="#" class="readMore hvr-sweep-to-right">read more</a>
                             <a href="#" class="donateNow hvr-sweep-to-right">donate now</a>
-                            <br>
+                            <br><br>
+                            <a href="#" id="scroll-down"><i class="fas fa-chevron-circle-down scroll-icon"></i></a>
+                            <p class="scroll">scroll down</p>
                         </div>
                     </div>
                 </div>
@@ -108,24 +126,24 @@
             <section id="foundation">
                 <div class="container text-center">
                     <h3>How we have helped</h3>
-                    <p>See how Al Jalila Foundation have promoted change locally and to the world</p>
+                    <p class="help">See how Al Jalila Foundation have promoted change locally and to the world</p>
                 </div>
-                <div class="foundation container text-center">
-                    <div class="foundationImg1">
-                        <img src="images/graduate.png" class="graduate1"/>
-                        <p class="p1">ta’alouf program</p>
+                <div class="container text-center">
+                    <div class="foundationImg foundationImgOne" style="background-image: url(images/foundation-img1.jpg)">
+                        <img src="images/foundation-icon.png" class="foundation-icon">
+                        <p class="program">ta’alouf program</p>
                         <br>
-                        <p class="p2">200</p>
-                        <p class="p3">graduates to date</p>
-                        <p class="p4">Ta”alouf program aims to extend its reach across the<br>Emirates addressing the needs of the country.</p>
+                        <p class="number">200</p>
+                        <p class="date">graduates to date</p>
+                        <p class="description">Ta”alouf program aims to extend its reach across the<br>Emirates addressing the needs of the country.</p>
                     </div>
-                    <div class="foundationImg2">
-                        <img src="images/graduate.png" class="graduate2"/>
-                        <p class="p5">ta’alouf program</p>
+                    <div class="foundationImg foundationImgTwo" style="background-image: url(images/foundation-img2.jpg)">
+                        <img src="images/foundation-icon.png" class="foundation-icon">
+                        <p class="program">ta’alouf program</p>
                         <br>
-                        <p class="p6">200</p>
-                        <p class="p7">graduates to date</p>
-                        <p class="p8">Ta”alouf program aims to extend its reach across the<br>Emirates addressing the needs of the country.</p>
+                        <p class="number">200</p>
+                        <p class="date">graduates to date</p>
+                        <p class="description">Ta”alouf program aims to extend its reach across the<br>Emirates addressing the needs of the country.</p>
                     </div>
                 </div>
             </section>
@@ -142,37 +160,79 @@
 
             <!-- Start Latest -->
             <section id="latest">
-                <div class="container">
+                <div class="container row">
                     <p class="ourAndPress our">Our latest</p>
                     <p class="ourAndPress press">press releases</p>
-                    <div class="latestImage1">
-                        <p class="day">02</p>
-                        <p class="month">december</p>
-                        <p class="dayOfWeek">monday 2015</p>
-                        <p class="par">7 Emirates raises AED60,000<br>Al Jalila Foundation to support<br>Sharjah suffering limb deformity.</p>
-                        <a href="#" class="readMore1">read more</a>
+
+                    <!-- Item 1 -->
+                    <div class="latestImage col-sm-6 col-md-3 col-md-3">
+                        <img src="images/latest-img2.jpg">
+                        <div class="content">
+                            <p class="day">02</p>
+                            <p class="month">december</p>
+                            <p class="dayOfWeek">monday 2015</p>
+                            <p class="par">7 Emirates raises AED60,000<br>Al Jalila Foundation to support<br>Sharjah suffering limb deformity.</p>
+                            <a href="#" class="readMore">read more</a>
+                        </div>
                     </div>
-                    <div class="latestImage2">
+
+                    <!-- Item 2 -->
+                    <div class="latestImage col-sm-6 col-md-3 col-md-3">
+                        <img src="images/latest-img4.jpg">
+                        <div class="content">
+                            <p class="day">04</p>
+                            <p class="month">january</p>
+                            <p class="dayOfWeek">monday 2016</p>
+                            <p class="par">7 Emirates raises AED60,000<br>Al Jalila Foundation to support<br>Sharjah suffering limb deformity.</p>
+                            <a href="#" class="readMore">read more</a>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="latestImage col-sm-6 col-md-3 col-md-3">
+                        <img src="images/latest-img2.jpg">
+                        <div class="content">
+                            <p class="day">23</p>
+                            <p class="month">january</p>
+                            <p class="dayOfWeek">saturday 2016</p>
+                            <p class="par">7 Emirates raises AED60,000<br>Al Jalila Foundation to support<br>Sharjah suffering limb deformity.</p>
+                            <a href="#" class="readMore">read more</a>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="latestImage col-xs-12 col-sm-6 col-md-3">
+                        <img src="images/latest-img3.jpg">
+                        <div class="content">
+                            <p class="day">07</p>
+                            <p class="month">october</p>
+                            <p class="dayOfWeek">wednesday 2015</p>
+                            <p class="par">7 Emirates raises AED60,000<br>Al Jalila Foundation to support<br>Sharjah suffering limb deformity.</p>
+                            <a href="#" class="readMore">read more</a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="latestImage" style="background-image: url(images/latest-img2.jpg)">
                         <p class="day">04</p>
                         <p class="month">january</p>
                         <p class="dayOfWeek">monday 2016</p>
                         <p class="par">7 Emirates raises AED60,000<br>Al Jalila Foundation to support<br>Sharjah suffering limb deformity.</p>
-                        <a href="#" class="readMore1">read more</a>
+                        <a href="#" class="readMore">read more</a>
                     </div>
-                    <div class="latestImage3">
+                    <div class="latestImage" style="background-image: url(images/latest-img3.jpg)">
                         <p class="day">23</p>
                         <p class="month">january</p>
                         <p class="dayOfWeek">saturday 2016</p>
                         <p class="par">7 Emirates raises AED60,000<br>Al Jalila Foundation to support<br>Sharjah suffering limb deformity.</p>
-                        <a href="#" class="readMore1">read more</a>
+                        <a href="#" class="readMore">read more</a>
                     </div>
-                    <div class="latestImage4">
+                    <div class="latestImage" style="background-image: url(images/latest-img4.jpg)">
                         <p class="day">07</p>
                         <p class="month">october</p>
                         <p class="dayOfWeek">wednesday 2015</p>
                         <p class="par">7 Emirates raises AED60,000<br>Al Jalila Foundation to support<br>Sharjah suffering limb deformity.</p>
-                        <a href="#" class="readMore1">read more</a>
-                    </div>
+                        <a href="#" class="readMore">read more</a>
+                    </div> -->
                 </div>
             </section>
             <!-- End Latest -->
@@ -187,8 +247,6 @@
                             <a href="#">mission, vision & goals</a>
                             <a href="#">our message</a>
                             <a href="#">board of trustees</a>
-                            <a href="#">board of directors</a>
-                            <a href="#">FAQ’s</a>
                         </div>
                         <div class="what col-xs-6 col-sm-3 col-md-2">
                             <p>what we do</p>
@@ -202,14 +260,14 @@
                             <a href="#">donate</a>
                             <a href="#">partners</a>
                         </div>
-                        <div class="mediaCenter col-xs-6 col-sm-3 col-md-2">
+                        <div class="media-center col-xs-6 col-sm-3 col-md-2">
                             <p>media center</p>
                             <a href="#">photo gallery</a>
                             <a href="#">video gallery</a>
                             <a href="#">social media hub</a>
                             <a href="#">events</a>
                         </div>
-                        <div class="contactUs col-xs-6 col-sm-3 col-md-4">
+                        <div class="contact-us col-xs-6 col-sm-3 col-md-4">
                             <p>contact us</p>
                             <a href="#">contact details</a>
                             <a href="#">careers</a>
